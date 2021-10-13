@@ -15,7 +15,9 @@ Button button;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        //make page title "Home"
+        this.setTitle("Home");
+        //make settings button lead to setting page which is Mainactivity2
         button = (Button) findViewById(R.id.settingsbutton);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
