@@ -6,8 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2"
     android:background="@drawable/settings_g_b"
-
-
     >
 
+    <TextView
+        android:id="@+id/enterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Enter Name:"
+        android:textSize="25sp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#30cfd0"
+        />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/enterName"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="35dp"
+        android:hint="Name"
+        android:textColorHint="@color/black"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/enterName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="15dp"
+        android:text="Submit"
+        android:id="@+id/submit"
+
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

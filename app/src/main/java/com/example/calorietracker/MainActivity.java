@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 
@@ -15,8 +16,9 @@ Button button;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //make page title "Home"
-        this.setTitle("Home");
+        //make page title "Home" and change color
+        getSupportActionBar().setTitle(Html.fromHtml("<font color = \"#30cfd0\">" + getString(R.string.home) + "</font>"));
+
         //make settings button lead to setting page which is Mainactivity2
         button = (Button) findViewById(R.id.settingsbutton);
         button.setOnClickListener(new View.OnClickListener() {
@@ -27,6 +29,8 @@ Button button;
         });
     }
 
+
+    //method that when called switches to Activity 2 which is the settings page
     public void openActivity2() {
         Intent intent = new Intent(this, MainActivity2.class);
         startActivity(intent);
