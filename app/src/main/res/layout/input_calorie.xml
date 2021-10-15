@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="36dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="76dp"
         android:text="Enter Total Calories"
         android:textColor="#30cfd0"
         android:textSize="25sp"
@@ -25,12 +25,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="36dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="108dp"
         android:ems="10"
         android:inputType="number"
         android:minHeight="48dp"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF"
         android:visibility="visible"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -41,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="36dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="180dp"
         android:text="Enter Carbohydrates (g)"
         android:textColor="#30cfd0"
         android:textSize="25sp"
@@ -53,25 +51,80 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="36dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="212dp"
         android:ems="10"
         android:inputType="number"
         android:minHeight="48dp"
+        android:visibility="visible"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:visibility="visible" />
 
     <TextView
         android:id="@+id/proteins"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="36dp"
-        android:layout_marginTop="248dp"
+        android:layout_marginTop="292dp"
         android:text="Enter Proteins (g)"
         android:textColor="#30cfd0"
         android:textSize="25sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/enter_proteins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="324dp"
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="388dp"
+        android:text="Enter Fats (g)"
+        android:textColor="#30cfd0"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/enter_fats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="420dp"
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:height="60dp"
+        android:width ="180dp"
+        android:textSize="25sp"
+        android:text="Finish"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="#30cfd0"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
