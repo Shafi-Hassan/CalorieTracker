@@ -11,51 +11,103 @@
 
     <Button
         android:id="@+id/breakfast"
-        android:text="breakfast"
+        android:background="@drawable/breakfast"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="450dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="396dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.178"
+        android:text="@string/BreakFast"
+        android:id="@+id/BFT"
+        android:textSize="23sp"
+        android:textColor="#062A78"
+        app:layout_constraintTop_toBottomOf="@+id/breakfast"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        />
 
     <Button
         android:id="@+id/lunch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="396dp"
-        android:text="Lunch"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="450dp"
+        android:background="@drawable/lunch"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.739"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:textColor="#30cfd0"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LT"
+        android:text="@string/Lunch"
+        android:textSize="23sp"
+        android:textColor="#062A78"
+        app:layout_constraintTop_toBottomOf="@+id/lunch"
+        app:layout_constraintHorizontal_bias="0.715"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         />
 
     <Button
         android:id="@+id/dinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginBottom="212dp"
-        android:text="dinner"
+        android:background="@drawable/dinner"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintHorizontal_bias="0.23"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:textColor="#30cfd0"
         />
 
-    <Button
-        android:id="@+id/snack"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/Dinner"
+        android:textSize="23sp"
+        android:textColor="#062A78"
+        app:layout_constraintTop_toBottomOf="@+id/dinner"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <Button
+        android:id="@+id/snack"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginBottom="212dp"
-        android:text="Snack"
+        android:background="@drawable/snack"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.739"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:textColor="#30cfd0"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/snackText"
+        android:text="@string/Snack"
+        android:textSize="23sp"
+        android:textColor="#062A78"
+        app:layout_constraintTop_toBottomOf="@+id/snack"
+        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

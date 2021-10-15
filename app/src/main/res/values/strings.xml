@@ -5,4 +5,11 @@
     <string name="calender">Calendar</string>
     <string name="home">Home</string>
     <string name="Carbs">Enter Carbohydrates(g)</string>
+    <string name="Dinner">Dinner</string>
+    <string name="BreakFast">Breakfast</string>
+    <string name="Lunch">Lunch</string>
+    <string name="Snack">Snack</string>
+    <string name="MOTD">Meals of the Day</string>
+    <string name="CAM">Calories and Macros</string>
+
 </resources>

@@ -18,6 +18,8 @@ public class Daily extends AppCompatActivity{
             super.onCreate(savedInstanceState);
             setContentView(R.layout.daily);
 
+            getSupportActionBar().setTitle(Html.fromHtml("<font color = \"#30cfd0\">" + getString(R.string.MOTD) + "</font>"));
+
             breakfast = findViewById(R.id.breakfast);
             lunch = findViewById(R.id.lunch);
             dinner = findViewById(R.id.dinner);
