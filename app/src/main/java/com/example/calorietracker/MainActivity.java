@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 Button button;
@@ -15,6 +16,12 @@ Button daily;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Intent intent = getIntent();
+        String text = intent.getStringExtra(MainActivity2.EXTRA_TEXT);
+
+        TextView textView1 = (TextView) findViewById(R.id.Hello);
+        textView1.setText(text);
 
         //make page title "Home" and change color
         getSupportActionBar().setTitle(Html.fromHtml("<font color = \"#30cfd0\">" + getString(R.string.home) + "</font>"));

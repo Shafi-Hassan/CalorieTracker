@@ -13,32 +13,33 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity2 extends AppCompatActivity {
+        public static final String EXTRA_TEXT = "com.example.application.CalorieTracker.EXTRA_TEXT";
 
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main2);
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+            //save the name and set it to the textview in mainactivity1
+            Button submit = findViewById(R.id.submit);
+            submit.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    goBack();
+                }
+            });
 
-        /* this should save the name and set it to the textview in mainactivity 1 but it doesnt
-        final EditText nameet = findViewById(R.id.editName);
-        Button submit = findViewById(R.id.submit);
-        submit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String Name = nameet.getText().toString().trim();
-                SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(MainActivity2.this);
-                pref.edit().putString("NAME", Name).apply();
+            //set page title to Settings and change color
+            getSupportActionBar().setTitle(Html.fromHtml("<font color = \"#30cfd0\">" + getString(R.string.settings) + "</font>"));
 
-                TextView savedTextView = findViewById(R.id.Hello);
-                String savedText = "Hello " + pref.getString("NAME", "");
-                savedTextView.setText(savedText);
-            }
-        });*/
+        }
 
+        public void goBack() {
+            EditText editText1 = (EditText) findViewById(R.id.editName);
+            String text = "Hello " + editText1.getText().toString() + " ready to meet your goals?";
 
-        //set page title to Settings and change color
-        getSupportActionBar().setTitle(Html.fromHtml("<font color = \"#30cfd0\">" + getString(R.string.settings) + "</font>"));
-
+            Intent intent = new Intent(this, MainActivity.class);
+            intent.putExtra(EXTRA_TEXT, text);
+            startActivity(intent);
+        }
     }
-}
