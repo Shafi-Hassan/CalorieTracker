@@ -2,7 +2,6 @@ package com.example.calorietracker;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
@@ -11,6 +10,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 Button button;
+Button daily;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,19 +20,31 @@ Button button;
         getSupportActionBar().setTitle(Html.fromHtml("<font color = \"#30cfd0\">" + getString(R.string.home) + "</font>"));
 
         //make settings button lead to setting page which is Mainactivity2
-        button = (Button) findViewById(R.id.settingsbutton);
+        button = findViewById(R.id.settingsbutton);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openActivity2();
             }
         });
-    }
 
+        daily = findViewById(R.id.dailybutton);
+        daily.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openDaily();
+            }
+        });
+    }
 
     //method that when called switches to Activity 2 which is the settings page
     public void openActivity2() {
         Intent intent = new Intent(this, MainActivity2.class);
+        startActivity(intent);
+    }
+
+    public void openDaily() {
+        Intent intent = new Intent(this, Daily.class);
         startActivity(intent);
     }
 }
