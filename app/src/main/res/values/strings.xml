@@ -4,4 +4,5 @@
     <string name="daily">Daily</string>
     <string name="calender">Calendar</string>
     <string name="home">Home</string>
+    <string name="Carbs">Enter Carbohydrates(g)</string>
 </resources>

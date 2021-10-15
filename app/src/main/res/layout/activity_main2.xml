@@ -32,8 +32,8 @@
         android:layout_marginLeft="5dp"
         android:layout_marginTop="35dp"
         android:hint="Name"
-        android:textColorHint="@color/white"
-        android:textColor="@color/white"
+        android:textColorHint="#30cfd0"
+        android:textColor="#30cfd0"
 
         />
     <Button
@@ -44,6 +44,7 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="15dp"
         android:text="Submit"
+        android:textColor="#30cfd0"
         android:id="@+id/submit"
 
         />
