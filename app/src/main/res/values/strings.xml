@@ -11,5 +11,8 @@
     <string name="Snack">Snack</string>
     <string name="MOTD">Meals of the Day</string>
     <string name="CAM">Calories and Macros</string>
-
+    <string name="Cals">Enter Total Calories</string>
+    <string name="Protien">Enter Proteins (g)</string>
+    <string name="Fats">Enter Fats (g)</string>
+    <string name="Fin">Finish</string>
 </resources>
