@@ -89,7 +89,7 @@
         android:textColor="#062A78"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/calenderbutton"
+        app:layout_constraintTop_toBottomOf="@+id/calendarbutton"
         android:layout_marginLeft="200dp"
         android:textSize="20sp"
         />
