@@ -12,6 +12,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 Button button;
 Button daily;
+Button calendar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +43,12 @@ Button daily;
                 openDaily();
             }
         });
+
+        calendar = findViewById(R.id.calendarbutton);
+        calendar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { openCalendar(); }
+        });
     }
 
     //method that when called switches to Activity 2 which is the settings page
@@ -54,4 +61,11 @@ Button daily;
         Intent intent = new Intent(this, Daily.class);
         startActivity(intent);
     }
+
+    public void openCalendar(){
+        Intent intent = new Intent(this, Calendar.class);
+        startActivity(intent);
+    }
+
+
 }

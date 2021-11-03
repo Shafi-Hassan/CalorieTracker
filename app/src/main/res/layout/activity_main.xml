@@ -70,7 +70,7 @@
         />
 
     <Button
-        android:id="@+id/calenderbutton"
+        android:id="@+id/calendarbutton"
         android:layout_width="78dp"
         android:layout_height="78dp"
         android:background="@drawable/outline_date_range_black_48"
