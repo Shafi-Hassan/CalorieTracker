@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity2 extends AppCompatActivity {
+public class MainActivity2 extends MainActivity {
         public static final String EXTRA_TEXT = "com.example.application.CalorieTracker.EXTRA_TEXT";
 
         @Override

@@ -7,7 +7,7 @@ import android.text.Html;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Daily extends AppCompatActivity{
+public class Daily extends MainActivity{
 
     Button breakfast;
     Button lunch;

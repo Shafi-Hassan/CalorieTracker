@@ -2,29 +2,37 @@ package com.example.calorietracker;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
 Button button;
 Button daily;
 Button calendar;
+protected static DailyIntakeStats dailyIntake = new DailyIntakeStats();
+private Calendar date = Calendar.getInstance();
+String prevStarted = "yes";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         Intent intent = getIntent();
         String text = intent.getStringExtra(MainActivity2.EXTRA_TEXT);
 
-        int cal = intent.getIntExtra(InputCalorie.EXTRA_NUMBER1, 0);
-        int carb = intent.getIntExtra(InputCalorie.EXTRA_NUMBER2, 0);
-        int protein = intent.getIntExtra(InputCalorie.EXTRA_NUMBER3, 0);
-        int fat = intent.getIntExtra(InputCalorie.EXTRA_NUMBER4, 0);
+        int cal = dailyIntake.getTotal_calories();
+        int carb = dailyIntake.getCarbs();
+        int protein = dailyIntake.getProteins();
+        int fat = dailyIntake.getFats();
 
         TextView textView1 = (TextView) findViewById(R.id.Hello);
 
