@@ -21,6 +21,11 @@ Button calendar;
         Intent intent = getIntent();
         String text = intent.getStringExtra(MainActivity2.EXTRA_TEXT);
 
+        int cal = intent.getIntExtra(InputCalorie.EXTRA_NUMBER1, 0);
+        int carb = intent.getIntExtra(InputCalorie.EXTRA_NUMBER2, 0);
+        int protein = intent.getIntExtra(InputCalorie.EXTRA_NUMBER3, 0);
+        int fat = intent.getIntExtra(InputCalorie.EXTRA_NUMBER4, 0);
+
         TextView textView1 = (TextView) findViewById(R.id.Hello);
         textView1.setText(text);
 
