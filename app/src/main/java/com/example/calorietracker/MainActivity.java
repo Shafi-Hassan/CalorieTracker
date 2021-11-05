@@ -27,7 +27,18 @@ Button calendar;
         int fat = intent.getIntExtra(InputCalorie.EXTRA_NUMBER4, 0);
 
         TextView textView1 = (TextView) findViewById(R.id.Hello);
+
+        TextView textView2 = (TextView) findViewById(R.id.Calories);
+        TextView textView3 = (TextView) findViewById(R.id.Carb);
+        TextView textView4 = (TextView) findViewById(R.id.Protein);
+        TextView textView5 = (TextView) findViewById(R.id.Fat);
+
         textView1.setText(text);
+
+        textView2.setText("Calories: " + cal);
+        textView3.setText("Carbohydrates: " + carb);
+        textView4.setText("Proteins: " + protein);
+        textView5.setText("Fats: " + fat);
 
         //make page title "Home" and change color
         getSupportActionBar().setTitle(Html.fromHtml("<font color = \"#30cfd0\">" + getString(R.string.home) + "</font>"));

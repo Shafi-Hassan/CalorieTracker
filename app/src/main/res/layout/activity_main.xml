@@ -23,6 +23,70 @@
         android:id="@+id/Hello"
         />
 
+    <TextView
+        android:id="@+id/Calories"
+        android:text="Calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/Hello"
+        android:textColor="#062A78"
+        android:textSize="20sp"
+       />
+
+    <TextView
+        android:id="@+id/Carb"
+        android:text="Carbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/Calories"
+        android:textColor="#062A78"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/Protein"
+        android:text="Proteins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/Carb"
+        android:textColor="#062A78"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/Fat"
+        android:text="Fats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/Protein"
+        android:textColor="#062A78"
+        android:textSize="20sp"
+        />
+
     <Button
         android:id="@+id/settingsbutton"
         android:layout_width="78dp"

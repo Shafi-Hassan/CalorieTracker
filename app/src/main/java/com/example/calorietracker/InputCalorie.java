@@ -46,7 +46,7 @@ public class InputCalorie extends AppCompatActivity{
             EditText editText4 = (EditText) findViewById(R.id.enter_fats);
             int fats = Integer.parseInt(editText4.getText().toString());
 
-            Intent intent = new Intent(this, Daily.class);
+            Intent intent = new Intent(this, MainActivity.class);
             intent.putExtra(EXTRA_NUMBER1, calories);
             intent.putExtra(EXTRA_NUMBER2, carbs);
             intent.putExtra(EXTRA_NUMBER3, proteins);
