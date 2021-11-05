@@ -36,10 +36,10 @@ public class MainActivity2 extends AppCompatActivity {
 
         public void goBack() {
             EditText editText1 = (EditText) findViewById(R.id.editName);
-            String text = "Hello " + editText1.getText().toString() + " ready to meet your goals?";
+
 
             Intent intent = new Intent(this, MainActivity.class);
-            intent.putExtra(EXTRA_TEXT, text);
+            //intent.putExtra(EXTRA_TEXT, text);
             startActivity(intent);
         }
     }
