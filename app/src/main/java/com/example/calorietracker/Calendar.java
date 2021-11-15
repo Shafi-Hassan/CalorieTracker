@@ -13,7 +13,7 @@ import android.text.Html;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Calendar extends AppCompatActivity {
+public class Calendar extends MainActivity {
 
     // Define the variable of CalendarView type
     // and TextView type;

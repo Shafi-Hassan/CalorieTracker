@@ -10,14 +10,14 @@ import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import java.util.Calendar;
+//import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
 Button button;
 Button daily;
 Button calendar;
 protected static DailyIntakeStats dailyIntake = new DailyIntakeStats();
-private Calendar date = Calendar.getInstance();
+//private Calendar date = Calendar.getInstance();
 String prevStarted = "yes";
 
     @Override

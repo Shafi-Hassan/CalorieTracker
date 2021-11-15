@@ -15,7 +15,7 @@
             android:exported="true" />
         <activity
             android:name=".Calendar"
-            android:parentActivityName=".Calendar"
+            android:parentActivityName=".MainActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
