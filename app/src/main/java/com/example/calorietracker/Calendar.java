@@ -42,11 +42,12 @@ public class Calendar extends MainActivity {
                                     int dayOfMonth)
                             {
                                 String Date
-                                        = dayOfMonth + "-"
-                                        + (month + 1) + "-" + year;
+                                        =
+                                        (month + 1) + "-" + dayOfMonth + "-" + year;
 
                                 // set this date in TextView for Display
                                 date_view.setText(Date);
+// add a popup text here that shows the macros for that day
                             }
                         });
     }
