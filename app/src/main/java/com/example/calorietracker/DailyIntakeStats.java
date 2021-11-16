@@ -38,6 +38,10 @@ public class DailyIntakeStats {
         total_calories += calories;
     }
 
+    public void removeCalories(int calories) {
+        total_calories -= calories;
+    }
+
     public void addCarbs(int carbs) {
         this.carbs += carbs;
     }

@@ -17,7 +17,6 @@ public class Calendar extends MainActivity {
 
     CalendarView calendar;
     TextView date_view;
-    protected static DailyIntakeStats dailyIntake = new DailyIntakeStats();
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -31,10 +30,11 @@ public class Calendar extends MainActivity {
         date_view = (TextView)
                 findViewById(R.id.date_view);
 
-        TextView textView2 = (TextView) findViewById(R.id.Calories);
-        TextView textView3 = (TextView) findViewById(R.id.Carb);
-        TextView textView4 = (TextView) findViewById(R.id.Protein);
-        TextView textView5 = (TextView) findViewById(R.id.Fat);
+        TextView textView1 = (TextView) findViewById(R.id.Calories);
+        TextView textView2 = (TextView) findViewById(R.id.Carb);
+        TextView textView3 = (TextView) findViewById(R.id.Protein);
+        TextView textView4 = (TextView) findViewById(R.id.Fat);
+
         // Listener in calendar
         calendar
                 .setOnDateChangeListener(
@@ -61,10 +61,10 @@ public class Calendar extends MainActivity {
                                 int fat = dailyIntake.getFats();
 
 
-                                textView2.setText("Calories: " + cal);
-                                textView3.setText("Carbohydrates: " + carb);
-                                textView4.setText("Proteins: " + protein);
-                                textView5.setText("Fats: " + fat);
+                                textView1.setText("Calories: " + cal);
+                                textView2.setText("Carbohydrates: " + carb);
+                                textView3.setText("Proteins: " + protein);
+                                textView4.setText("Fats: " + fat);
                             }
                         });
     }
