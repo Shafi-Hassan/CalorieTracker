@@ -1,5 +1,4 @@
 package com.example.calorietracker;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
