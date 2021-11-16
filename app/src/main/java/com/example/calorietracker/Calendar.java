@@ -36,7 +36,7 @@ public class Calendar extends MainActivity {
                                 .OnDateChangeListener() {
                             @Override
                             public void onSelectedDayChange(
-                                   CalendarView view,
+                                    CalendarView view,
                                     int year,
                                     int month,
                                     int dayOfMonth)
