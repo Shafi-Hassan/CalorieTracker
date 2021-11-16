@@ -17,6 +17,8 @@ public class Calendar extends MainActivity {
 
     CalendarView calendar;
     TextView date_view;
+    protected static DailyIntakeStats dailyIntake = new DailyIntakeStats();
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -29,6 +31,10 @@ public class Calendar extends MainActivity {
         date_view = (TextView)
                 findViewById(R.id.date_view);
 
+        TextView textView2 = (TextView) findViewById(R.id.Calories);
+        TextView textView3 = (TextView) findViewById(R.id.Carb);
+        TextView textView4 = (TextView) findViewById(R.id.Protein);
+        TextView textView5 = (TextView) findViewById(R.id.Fat);
         // Listener in calendar
         calendar
                 .setOnDateChangeListener(
@@ -47,7 +53,18 @@ public class Calendar extends MainActivity {
 
                                 // set this date in TextView for Display
                                 date_view.setText(Date);
-// add a popup text here that shows the macros for that day
+
+
+                                int cal = dailyIntake.getTotal_calories();
+                                int carb = dailyIntake.getCarbs();
+                                int protein = dailyIntake.getProteins();
+                                int fat = dailyIntake.getFats();
+
+
+                                textView2.setText("Calories: " + cal);
+                                textView3.setText("Carbohydrates: " + carb);
+                                textView4.setText("Proteins: " + protein);
+                                textView5.setText("Fats: " + fat);
                             }
                         });
     }

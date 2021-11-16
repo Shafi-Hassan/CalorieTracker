@@ -15,6 +15,8 @@ public class DailyIntakeStats {
         fats = 0;
         proteins = 0;
     }
+    // need to implement feature here to save the daily intake based on a date for Calendar feature
+    // have an option to maybe choose the date
 
     public int getTotal_calories() {
         return total_calories;
