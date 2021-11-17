@@ -1,5 +1,4 @@
 package com.example.calorietracker;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -16,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 Button button;
 Button daily;
 Button calendar;
+Button exercise;
 protected static DailyIntakeStats dailyIntake = new DailyIntakeStats();
 //private Calendar date = Calendar.getInstance();
 String prevStarted = "yes";
@@ -73,6 +73,12 @@ String prevStarted = "yes";
             @Override
             public void onClick(View view) { openCalendar(); }
         });
+
+        exercise = findViewById(R.id.exercisebutton);
+        exercise.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { openExercise(); }
+        });
     }
 
     //method that when called switches to Activity 2 which is the settings page
@@ -91,5 +97,9 @@ String prevStarted = "yes";
         startActivity(intent);
     }
 
+    public void openExercise(){
+        Intent intent = new Intent(this, Exercise.class);
+        startActivity(intent);
+    }
 
 }
