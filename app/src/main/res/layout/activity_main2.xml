@@ -90,6 +90,45 @@
 
         app:layout_constraintTop_toBottomOf="@+id/enterAge" />
 
+    <TextView
+        android:id="@+id/enterHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="332dp"
+        android:text="Enter Height:"
+        android:textColor="#30cfd0"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="332dp"
+        android:ems="10"
+        android:hint="Height"
+        android:inputType="textPersonName"
+        android:textColor="#30cfd0"
+        android:textColorHint="#30cfd0"
+        app:layout_constraintLeft_toRightOf="@+id/enterHeight"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <Button
+        android:id="@+id/submitHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Submit"
+        android:textColor="#30cfd0"
+        app:layout_constraintHorizontal_bias="0.389"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editHeight" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
