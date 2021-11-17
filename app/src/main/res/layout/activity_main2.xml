@@ -4,16 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2"
     android:background="@drawable/settings_g_b"
-    >
+    tools:context=".MainActivity2">
 
     <TextView
         android:id="@+id/enterName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="44dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="32dp"
         android:text="Enter Name:"
         android:textColor="#30cfd0"
         android:textSize="25sp"
@@ -22,10 +21,10 @@
 
     <EditText
         android:id="@+id/editName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="205dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName"
@@ -40,7 +39,7 @@
         android:id="@+id/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
         android:text="Submit"
         android:textColor="#30cfd0"
         app:layout_constraintHorizontal_bias="0.47"
@@ -53,7 +52,7 @@
         android:id="@+id/enterAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="64dp"
+        android:layout_marginLeft="44dp"
         android:layout_marginTop="180dp"
         android:text="Enter Age:"
         android:textColor="#30cfd0"
@@ -63,8 +62,8 @@
 
     <EditText
         android:id="@+id/editAge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="203dp"
+        android:layout_height="43dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="180dp"
         android:ems="10"
@@ -94,8 +93,8 @@
         android:id="@+id/enterHeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="52dp"
-        android:layout_marginTop="332dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="348dp"
         android:text="Enter Height:"
         android:textColor="#30cfd0"
         android:textSize="25sp"
@@ -104,28 +103,27 @@
 
     <EditText
         android:id="@+id/editHeight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="332dp"
+        android:layout_width="202dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="344dp"
         android:ems="10"
         android:hint="Height"
         android:inputType="textPersonName"
         android:textColor="#30cfd0"
         android:textColorHint="#30cfd0"
-        app:layout_constraintLeft_toRightOf="@+id/enterHeight"
-        app:layout_constraintTop_toTopOf="parent"
 
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/submitHeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:text="Submit"
         android:textColor="#30cfd0"
-        app:layout_constraintHorizontal_bias="0.389"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editHeight" />
