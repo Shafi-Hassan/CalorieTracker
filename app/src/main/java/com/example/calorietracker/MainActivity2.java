@@ -45,6 +45,11 @@ public class MainActivity2 extends MainActivity {
             if(!ageString.equals(""))
                 dailyIntake.addAge(Integer.parseInt(ageString));
 
+            EditText editText3 = (EditText) findViewById(R.id.editHeight);
+            String heightString = editText3.getText().toString();
+            if(!heightString.equals(""))
+                dailyIntake.addHeight(Integer.parseInt(heightString));
+
             Intent intent = new Intent(this, MainActivity.class);
             //intent.putExtra(EXTRA_TEXT, text);
             startActivity(intent);

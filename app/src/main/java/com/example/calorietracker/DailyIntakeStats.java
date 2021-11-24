@@ -10,6 +10,7 @@ public class DailyIntakeStats {
     private int proteins;
     private String name;
     private int age;
+    private int height;
 
     public DailyIntakeStats() {
         total_calories = 0;
@@ -58,11 +59,18 @@ public class DailyIntakeStats {
 
     //i'm just gonna add setting input stuff here for now
     public String getName() {return name; }
+
     public int getAge() {return age; }
+
+    public int getHeight() {return height; }
+
     public void addName(String name) {
         this.name = name;
     }
+
     public void addAge(int age) {
         this.age = age;
     }
+
+    public void addHeight(int height) { this.height = height; }
 }
