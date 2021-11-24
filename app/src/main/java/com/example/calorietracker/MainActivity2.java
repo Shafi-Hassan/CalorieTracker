@@ -21,8 +21,24 @@ public class MainActivity2 extends MainActivity {
             setContentView(R.layout.activity_main2);
 
             //save the name and set it to the textview in mainactivity1
-            Button submit = findViewById(R.id.submit);
-            submit.setOnClickListener(new View.OnClickListener() {
+            Button submit1 = findViewById(R.id.submit);
+            submit1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    goBack();
+                }
+            });
+
+            Button submit2 = findViewById(R.id.submitAge);
+            submit2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    goBack();
+                }
+            });
+
+            Button submit3 = findViewById(R.id.submitHeight);
+            submit3.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     goBack();
