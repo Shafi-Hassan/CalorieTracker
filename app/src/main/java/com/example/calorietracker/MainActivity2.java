@@ -13,7 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity2 extends MainActivity {
-        public static final String EXTRA_TEXT = "com.example.application.CalorieTracker.EXTRA_TEXT";
+        //public static final String EXTRA_TEXT = "com.example.application.CalorieTracker.EXTRA_TEXT";
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +39,11 @@ public class MainActivity2 extends MainActivity {
             String nameString = editText1.getText().toString();
             if(!nameString.equals(""))
                 dailyIntake.addName(nameString);
+
+            EditText editText2 = (EditText) findViewById(R.id.editAge);
+            String ageString = editText2.getText().toString();
+            if(!ageString.equals(""))
+                dailyIntake.addAge(Integer.parseInt(ageString));
 
             Intent intent = new Intent(this, MainActivity.class);
             //intent.putExtra(EXTRA_TEXT, text);
