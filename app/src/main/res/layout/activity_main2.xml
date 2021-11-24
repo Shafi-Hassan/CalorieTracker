@@ -21,8 +21,8 @@
 
     <EditText
         android:id="@+id/editName"
-        android:layout_width="205dp"
-        android:layout_height="43dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="32dp"
         android:ems="10"
@@ -46,33 +46,33 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
 
-        app:layout_constraintTop_toBottomOf="@+id/enterName" />
+        app:layout_constraintTop_toBottomOf="@+id/editName" />
 
     <TextView
         android:id="@+id/enterAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="44dp"
-        android:layout_marginTop="185dp"
+        android:layout_marginTop="20dp"
         android:text="Enter Age:"
         android:textColor="#30cfd0"
         android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintRight_toRightOf="@+id/enterName"
+        app:layout_constraintTop_toBottomOf="@+id/submit" />
 
     <EditText
         android:id="@+id/editAge"
-        android:layout_width="203dp"
-        android:layout_height="43dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="14dp"
         android:ems="10"
         android:hint="Age"
         android:inputType="textPersonName"
         android:textColor="#30cfd0"
         android:textColorHint="#30cfd0"
         app:layout_constraintLeft_toRightOf="@+id/enterAge"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submit"
 
         />
 
@@ -80,33 +80,33 @@
         android:id="@+id/submitAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:text="Submit"
         android:textColor="#30cfd0"
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
 
-        app:layout_constraintTop_toBottomOf="@+id/enterAge" />
+        app:layout_constraintTop_toBottomOf="@+id/editAge" />
 
     <TextView
         android:id="@+id/enterHeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="348dp"
+        android:layout_marginTop="20dp"
         android:text="Enter Height:"
         android:textColor="#30cfd0"
         android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintRight_toRightOf="@+id/enterName"
+        app:layout_constraintTop_toBottomOf="@+id/submitAge" />
 
     <EditText
         android:id="@+id/editHeight"
-        android:layout_width="202dp"
-        android:layout_height="42dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="344dp"
+        android:layout_marginTop="14dp"
         android:ems="10"
         android:hint="Height"
         android:inputType="textPersonName"
@@ -114,7 +114,7 @@
         android:textColorHint="#30cfd0"
 
         app:layout_constraintLeft_toRightOf="@+id/enterHeight"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/submitAge" />
 
     <Button
         android:id="@+id/submitHeight"
@@ -133,19 +133,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="504dp"
+        android:layout_marginTop="20dp"
         android:text="Enter Weight:"
         android:textColor="#30cfd0"
         android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintRight_toRightOf="@+id/enterName"
+        app:layout_constraintTop_toBottomOf="@+id/submitHeight" />
 
     <EditText
         android:id="@+id/editWeight"
-        android:layout_width="202dp"
-        android:layout_height="42dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="498dp"
+        android:layout_marginTop="14dp"
         android:ems="10"
         android:hint="Weight"
         android:inputType="textPersonName"
@@ -153,7 +153,7 @@
         android:textColorHint="#30cfd0"
 
         app:layout_constraintLeft_toRightOf="@+id/enterWeight"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/submitHeight" />
 
     <Button
         android:id="@+id/submitWeight"
