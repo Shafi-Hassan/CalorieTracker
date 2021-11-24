@@ -45,6 +45,14 @@ public class MainActivity2 extends MainActivity {
                 }
             });
 
+            Button submit4 = findViewById(R.id.submitWeight);
+            submit4.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    goBack();
+                }
+            });
+
             //set page title to Settings and change color
             getSupportActionBar().setTitle(Html.fromHtml("<font color = \"#30cfd0\">" + getString(R.string.settings) + "</font>"));
 
@@ -65,6 +73,11 @@ public class MainActivity2 extends MainActivity {
             String heightString = editText3.getText().toString();
             if(!heightString.equals(""))
                 dailyIntake.addHeight(Integer.parseInt(heightString));
+
+            EditText editText4 = (EditText) findViewById(R.id.editWeight);
+            String weightString = editText4.getText().toString();
+            if(!weightString.equals(""))
+                dailyIntake.addWeight(Integer.parseInt(weightString));
 
             Intent intent = new Intent(this, MainActivity.class);
             //intent.putExtra(EXTRA_TEXT, text);

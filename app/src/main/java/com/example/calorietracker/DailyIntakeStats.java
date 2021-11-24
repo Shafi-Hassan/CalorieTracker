@@ -11,6 +11,7 @@ public class DailyIntakeStats {
     private String name;
     private int age;
     private int height;
+    private int weight;
 
     public DailyIntakeStats() {
         total_calories = 0;
@@ -65,6 +66,8 @@ public class DailyIntakeStats {
 
     public int getHeight() {return height; }
 
+    public int getWeight() {return weight; }
+
     public void addName(String name) {
         this.name = name;
     }
@@ -74,4 +77,6 @@ public class DailyIntakeStats {
     }
 
     public void addHeight(int height) { this.height = height; }
+
+    public void addWeight(int weight) { this.weight = weight; }
 }
