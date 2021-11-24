@@ -27,7 +27,7 @@ String prevStarted = "yes";
         setContentView(R.layout.activity_main);
 
         Intent intent = getIntent();
-        String text = intent.getStringExtra(MainActivity2.EXTRA_TEXT);
+        String name = dailyIntake.getName();
 
         int cal = dailyIntake.getTotal_calories();
         int carb = dailyIntake.getCarbs();
@@ -41,7 +41,7 @@ String prevStarted = "yes";
         TextView textView4 = (TextView) findViewById(R.id.Protein);
         TextView textView5 = (TextView) findViewById(R.id.Fat);
 
-        textView1.setText(text);
+        textView1.setText("Hello, " + name);
 
         textView2.setText("Calories: " + cal);
         textView3.setText("Carbohydrates: " + carb);

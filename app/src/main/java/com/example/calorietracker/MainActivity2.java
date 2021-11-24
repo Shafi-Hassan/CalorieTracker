@@ -36,7 +36,9 @@ public class MainActivity2 extends MainActivity {
 
         public void goBack() {
             EditText editText1 = (EditText) findViewById(R.id.editName);
-
+            String nameString = editText1.getText().toString();
+            if(!nameString.equals(""))
+                dailyIntake.addName(nameString);
 
             Intent intent = new Intent(this, MainActivity.class);
             //intent.putExtra(EXTRA_TEXT, text);
