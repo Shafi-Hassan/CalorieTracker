@@ -33,20 +33,21 @@ String prevStarted = "yes";
         int carb = dailyIntake.getCarbs();
         int protein = dailyIntake.getProteins();
         int fat = dailyIntake.getFats();
+        double bmi = dailyIntake.calBMI();
 
         TextView textView1 = (TextView) findViewById(R.id.Hello);
-
         TextView textView2 = (TextView) findViewById(R.id.Calories);
         TextView textView3 = (TextView) findViewById(R.id.Carb);
         TextView textView4 = (TextView) findViewById(R.id.Protein);
         TextView textView5 = (TextView) findViewById(R.id.Fat);
+        TextView textView6 = (TextView) findViewById(R.id.BMI);
 
         textView1.setText("Hello, " + name);
-
         textView2.setText("Calories: " + cal);
         textView3.setText("Carbohydrates: " + carb);
         textView4.setText("Proteins: " + protein);
         textView5.setText("Fats: " + fat);
+        textView6.setText("BMI: " + bmi);
 
         //make page title "Home" and change color
         getSupportActionBar().setTitle(Html.fromHtml("<font color = \"#30cfd0\">" + getString(R.string.home) + "</font>"));

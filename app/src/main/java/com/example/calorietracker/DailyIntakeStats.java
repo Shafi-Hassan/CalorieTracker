@@ -12,6 +12,8 @@ public class DailyIntakeStats {
     private int age;
     private int height;
     private int weight;
+    private double bmi;
+    private double roundedBMI;
 
     public DailyIntakeStats() {
         total_calories = 0;
@@ -19,6 +21,7 @@ public class DailyIntakeStats {
         fats = 0;
         proteins = 0;
         name = "Guest";
+        bmi = 0;
     }
     // need to implement feature here to save the daily intake based on a date for Calendar feature
     // have an option to maybe choose the date
@@ -79,4 +82,14 @@ public class DailyIntakeStats {
     public void addHeight(int height) { this.height = height; }
 
     public void addWeight(int weight) { this.weight = weight; }
+    //method to calculate the BMI with weight and height
+    //BMI formula is (kg) / [height (m)]^2
+    public double calBMI(){
+        double meters = (height /39.37);
+        double metersSquared = (meters * meters);
+        double kg = (weight/2.205);
+        bmi = kg / metersSquared;
+        roundedBMI = Math.round(bmi*100.0)/100.0;
+        return (roundedBMI);
+    }
 }

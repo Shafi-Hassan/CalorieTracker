@@ -15,4 +15,20 @@
     <string name="Protien">Enter Proteins (g)</string>
     <string name="Fats">Enter Fats (g)</string>
     <string name="Fin">Finish</string>
+    <string name="EN">Enter Name:</string>
+    <string name="N">Name</string>
+    <string name="Sub">Submit</string>
+    <string name="EA">Enter Age:</string>
+    <string name="age">Age</string>
+    <string name="Eh">Enter Height(in):</string>
+    <string name="EW">Enter Weight(lb):</string>
+    <string name="He">Height</string>
+    <string name="We">Weight</string>
+    <string name="Exe">Exercise</string>
+    <string name="ENs">Enter Name in Settings:</string>
+    <string name="Fat">Fats</string>
+    <string name="Protiens">Protein</string>
+    <string name="Carb">Carbs</string>
+    <string name="Calorie">Calories</string>
+    <string name="BMI">BMI</string>
 </resources>
