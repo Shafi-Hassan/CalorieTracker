@@ -33,5 +33,6 @@
     <string name="BMI">BMI</string>
     <string name="feet">Feet</string>
     <string name="Inch">Inches</string>
+    <string name="exer">Enter Exercise Performed:</string>
 
 </resources>
