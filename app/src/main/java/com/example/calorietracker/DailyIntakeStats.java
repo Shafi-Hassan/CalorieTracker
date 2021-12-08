@@ -11,6 +11,8 @@ public class DailyIntakeStats {
     private String name;
     private int age;
     private int height;
+    private int feet;
+    private int inch;
     private int weight;
     private double bmi;
     private double roundedBMI;
@@ -67,7 +69,9 @@ public class DailyIntakeStats {
 
     public int getAge() {return age; }
 
-    public int getHeight() {return height; }
+    public int getFeet() {return feet; }
+
+    public int getInch() {return inch;}
 
     public int getWeight() {return weight; }
 
@@ -79,12 +83,15 @@ public class DailyIntakeStats {
         this.age = age;
     }
 
-    public void addHeight(int height) { this.height = height; }
+    public void addFeet(int feet) { this.feet = feet; }
+
+    public void addInch(int inch){this.inch = inch;}
 
     public void addWeight(int weight) { this.weight = weight; }
     //method to calculate the BMI with weight and height
     //BMI formula is (kg) / [height (m)]^2
     public double calBMI(){
+        height = (feet * 12) + inch;
         double meters = (height /39.37);
         double metersSquared = (meters * meters);
         double kg = (weight/2.205);

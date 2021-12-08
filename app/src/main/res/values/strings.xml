@@ -20,7 +20,7 @@
     <string name="Sub">Submit</string>
     <string name="EA">Enter Age:</string>
     <string name="age">Age</string>
-    <string name="Eh">Enter Height(in):</string>
+    <string name="Eh">Enter Height:</string>
     <string name="EW">Enter Weight(lb):</string>
     <string name="He">Height</string>
     <string name="We">Weight</string>
@@ -31,4 +31,7 @@
     <string name="Carb">Carbs</string>
     <string name="Calorie">Calories</string>
     <string name="BMI">BMI</string>
+    <string name="feet">Feet</string>
+    <string name="Inch">Inches</string>
+
 </resources>

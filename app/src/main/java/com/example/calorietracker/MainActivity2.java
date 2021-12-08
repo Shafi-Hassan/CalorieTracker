@@ -69,13 +69,18 @@ public class MainActivity2 extends MainActivity {
             if(!ageString.equals(""))
                 dailyIntake.addAge(Integer.parseInt(ageString));
 
-            EditText editText3 = (EditText) findViewById(R.id.editHeight);
-            String heightString = editText3.getText().toString();
-            if(!heightString.equals(""))
-                dailyIntake.addHeight(Integer.parseInt(heightString));
+            EditText editText3 = (EditText) findViewById(R.id.editFeet);
+            String feetString = editText3.getText().toString();
+            if(!feetString.equals(""))
+                dailyIntake.addFeet(Integer.parseInt(feetString));
 
-            EditText editText4 = (EditText) findViewById(R.id.editWeight);
-            String weightString = editText4.getText().toString();
+            EditText editText4 = (EditText) findViewById(R.id.editInch);
+            String inchString = editText4.getText().toString();
+            if(!inchString.equals(""))
+                dailyIntake.addInch(Integer.parseInt(inchString));
+
+            EditText editText5 = (EditText) findViewById(R.id.editWeight);
+            String weightString = editText5.getText().toString();
             if(!weightString.equals(""))
                 dailyIntake.addWeight(Integer.parseInt(weightString));
 
