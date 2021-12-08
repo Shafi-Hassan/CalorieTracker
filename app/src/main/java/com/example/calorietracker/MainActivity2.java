@@ -59,6 +59,7 @@ public class MainActivity2 extends MainActivity {
         }
 
         public void goBack() {
+            //create all the edit texts that will take the user inputs and save them in the daily input database
             EditText editText1 = (EditText) findViewById(R.id.editName);
             String nameString = editText1.getText().toString();
             if(!nameString.equals(""))
@@ -69,11 +70,13 @@ public class MainActivity2 extends MainActivity {
             if(!ageString.equals(""))
                 dailyIntake.addAge(Integer.parseInt(ageString));
 
+            //this are for feet
             EditText editText3 = (EditText) findViewById(R.id.editFeet);
             String feetString = editText3.getText().toString();
             if(!feetString.equals(""))
                 dailyIntake.addFeet(Integer.parseInt(feetString));
 
+            //this is for inches
             EditText editText4 = (EditText) findViewById(R.id.editInch);
             String inchString = editText4.getText().toString();
             if(!inchString.equals(""))

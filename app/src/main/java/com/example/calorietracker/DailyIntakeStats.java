@@ -88,8 +88,10 @@ public class DailyIntakeStats {
     public void addInch(int inch){this.inch = inch;}
 
     public void addWeight(int weight) { this.weight = weight; }
+
     //method to calculate the BMI with weight and height
     //BMI formula is (kg) / [height (m)]^2
+    //height is derived from the feet and inches from user input feet is * 12 to get inches.
     public double calBMI(){
         height = (feet * 12) + inch;
         double meters = (height /39.37);
