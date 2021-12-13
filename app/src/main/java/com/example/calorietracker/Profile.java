@@ -12,7 +12,6 @@ import android.widget.TextView;
 public class Profile extends MainActivity {
 
     Button edit;
-    protected static DailyIntakeStats dailyIntake = MainActivity.dailyIntake;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
