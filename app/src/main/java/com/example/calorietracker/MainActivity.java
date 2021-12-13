@@ -4,11 +4,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Html;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import java.util.ArrayList;
+
+import com.github.mikephil.charting.charts.PieChart;
+import com.github.mikephil.charting.components.Legend;
+import com.github.mikephil.charting.data.PieData;
+import com.github.mikephil.charting.data.PieDataSet;
+import com.github.mikephil.charting.data.PieEntry;
 //import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,7 +25,11 @@ Button button;
 Button daily;
 Button calendar;
 Button exercise;
+private static String TAG = "MainActivity";
 protected static DailyIntakeStats dailyIntake = new DailyIntakeStats();
+private float[] stats = {dailyIntake.getCarbs(), dailyIntake.getProteins(), dailyIntake.getFats()};
+private String[] statNames = {"Carbs", "Proteins", "Fats"};
+PieChart pieChart;
 //private Calendar date = Calendar.getInstance();
 String prevStarted = "yes";
 
@@ -25,6 +38,15 @@ String prevStarted = "yes";
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        pieChart = (PieChart) findViewById(R.id.piechart);
+        pieChart.getDescription().setText("");
+        pieChart.setRotationEnabled(false);
+        pieChart.setHoleRadius(5f);
+        pieChart.setDrawEntryLabels(false);
+        pieChart.setUsePercentValues(true);
+        addDataSet(pieChart);
+
 
         Intent intent = getIntent();
         String name = dailyIntake.getName();
@@ -101,6 +123,33 @@ String prevStarted = "yes";
     public void openExercise(){
         Intent intent = new Intent(this, Exercise.class);
         startActivity(intent);
+    }
+
+    private void addDataSet(PieChart chart) {
+        ArrayList<PieEntry> yEntrys= new ArrayList<>();
+        ArrayList<String> xEntrys = new ArrayList<>();
+        for(int i = 0; i < stats.length; i++)
+            yEntrys.add(new PieEntry(stats[i], statNames[i]));
+        for(int i = 1; i < statNames.length; i++)
+            xEntrys.add(statNames[i]);
+
+        PieDataSet pieDataSet = new PieDataSet(yEntrys, "");
+        pieDataSet.setSliceSpace(2);
+        //pieDataSet.setValueLineColor(10);
+
+        ArrayList<Integer> colors = new ArrayList<>();
+        colors.add(Color.WHITE);
+        colors.add(Color.YELLOW);
+        colors.add(Color.MAGENTA);
+
+        pieDataSet.setColors(colors);
+        Legend legend = pieChart.getLegend();
+        legend.setForm(Legend.LegendForm.CIRCLE);
+
+        PieData pieData = new PieData(pieDataSet);
+        pieChart.setData(pieData);
+        pieChart.invalidate();
+
     }
 
 }
