@@ -14,7 +14,6 @@ public class Exercise extends MainActivity{
     // subtract this calorie amount from daily
 
     Button back;
-    Button Schedule;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,14 +27,6 @@ public class Exercise extends MainActivity{
                 goBack();
             }
         });
-
-        Schedule = findViewById(R.id.schedule);
-        Schedule.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openScheduleActivity();
-            }
-        });
     }
 
     private void goBack() {
@@ -46,11 +37,6 @@ public class Exercise extends MainActivity{
             dailyIntake.removeCalories(Integer.parseInt(calString));
 
         Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
-
-    public void openScheduleActivity() {
-        Intent intent = new Intent(this, Schedule.class);
         startActivity(intent);
     }
 

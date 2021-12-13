@@ -7,12 +7,11 @@
     tools:context=".Exercise"
     android:background="@drawable/inputdata_g_b"
     >
-
     <TextView
         android:id="@+id/sport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="52dp"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="76dp"
         android:text="@string/exer"
         android:textColor="#30cfd0"
@@ -24,8 +23,8 @@
         android:id="@+id/enter_sport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="52dp"
-        android:layout_marginTop="128dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="116dp"
         android:ems="10"
         android:inputType="text"
         android:minHeight="48dp"
@@ -38,8 +37,8 @@
         android:id="@+id/total_calories"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="52dp"
-        android:layout_marginTop="236dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="228dp"
         android:text="@string/Cals"
         android:textColor="#30cfd0"
         android:textSize="25sp"
@@ -50,8 +49,8 @@
         android:id="@+id/enter_calories"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="52dp"
-        android:layout_marginTop="276dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="272dp"
         android:ems="10"
         android:inputType="number"
         android:minHeight="48dp"
@@ -59,21 +58,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck" />
-
-    <Button
-        android:id="@+id/schedule"
-        android:layout_width="199dp"
-        android:layout_height="111dp"
-        android:layout_marginBottom="180dp"
-        android:width="180dp"
-        android:height="60dp"
-        android:text="Enter your Schedule"
-        android:textColor="#30cfd0"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
 
     <Button
         android:id="@+id/finish"
