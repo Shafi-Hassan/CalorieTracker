@@ -12,11 +12,9 @@ public class Exercise extends MainActivity{
     // add a part that will choose excercises
     // inputs calories
     // subtract this calorie amount from daily
-    protected static Calculate_Schedule scheduleIntake = new Calculate_Schedule();
 
     Button back;
     Button Schedule;
-    Button See_Schedule;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,14 +36,6 @@ public class Exercise extends MainActivity{
                 openScheduleActivity();
             }
         });
-
-        See_Schedule = findViewById(R.id.see_schedule);
-        See_Schedule.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openSee_ScheduleActivity();
-            }
-        });
     }
 
     private void goBack() {
@@ -61,11 +51,6 @@ public class Exercise extends MainActivity{
 
     public void openScheduleActivity() {
         Intent intent = new Intent(this, Schedule.class);
-        startActivity(intent);
-    }
-
-    public void openSee_ScheduleActivity() {
-        Intent intent = new Intent(this, See_Schedule.class);
         startActivity(intent);
     }
 

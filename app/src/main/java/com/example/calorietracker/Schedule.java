@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class Schedule extends Exercise {
+public class Schedule extends MainActivity{
 
     Button back;
 
@@ -31,31 +31,32 @@ public class Schedule extends Exercise {
         EditText editText1 = (EditText) findViewById(R.id.enter_Monday);
         String MonString = editText1.getText().toString();
         if(!MonString.equals(""))
-            scheduleIntake.addMonday(MonString);
-
+            dailyIntake.addCalories(Integer.parseInt(MonString))
+                    ;
 
         EditText editText2 = (EditText) findViewById(R.id.enter_Tuesday);
         String TuesString = editText2.getText().toString();
         if(!TuesString.equals(""))
-        scheduleIntake.addTuesday(TuesString);
-
+          //  dailyIntake.addCarbs(Integer.parseInt(TuesString))
+                    ;
 
         EditText editText3 = (EditText) findViewById(R.id.enter_Wednesday);
         String WedString = editText3.getText().toString();
         if(!WedString.equals(""))
-            scheduleIntake.addWednesday(WedString);
+         //   dailyIntake.addProteins(Integer.parseInt(WedString))
+                    ;
 
         EditText editText4 = (EditText) findViewById(R.id.enter_Thursday);
         String ThursdayString = editText4.getText().toString();
         if(!ThursdayString.equals(""))
-            scheduleIntake.addThursday(ThursdayString);
+           // dailyIntake.addFats(Integer.parseInt(ThursdayString))
+            ;
 
         EditText editText5 = (EditText) findViewById(R.id.enter_Friday);
         String FridayString = editText4.getText().toString();
         if(!FridayString.equals(""))
-            scheduleIntake.addFriday(FridayString);
-
-
+            // dailyIntake.addFats(Integer.parseInt(FridayString))
+            ;
         Intent intent = new Intent(this, Exercise.class);
         startActivity(intent);
     }
