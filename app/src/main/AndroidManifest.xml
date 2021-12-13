@@ -26,6 +26,10 @@
             android:parentActivityName=".Exercise"
             android:exported="true" />
         <activity
+            android:name=".See_Schedule"
+            android:parentActivityName=".Exercise"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" >
             <intent-filter>
