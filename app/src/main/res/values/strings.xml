@@ -34,5 +34,11 @@
     <string name="feet">Feet</string>
     <string name="Inch">Inches</string>
     <string name="exer">Enter Exercise Performed:</string>
-
+    <string name="prof">Profile</string>
+    <string name="edit_p">Edit Profile</string>
+    <string name="Name">Name:</string>
+    <string name="Height">Height:</string>
+    <string name="Weight">Weight:</string>
+    <string name="ft">ft</string>
+    <string name="in">in</string>
 </resources>
