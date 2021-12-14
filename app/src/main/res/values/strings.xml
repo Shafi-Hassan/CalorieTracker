@@ -21,9 +21,9 @@
     <string name="EA">Enter Age:</string>
     <string name="age">Age</string>
     <string name="Eh">Enter Height:</string>
-    <string name="EW">Enter Weight(lb):</string>
+    <string name="EW">Enter Weight:</string>
     <string name="He">Height</string>
-    <string name="We">Weight</string>
+    <string name="We">Weight in lbs</string>
     <string name="Exe">Exercise</string>
     <string name="ENs">Enter Name in Settings:</string>
     <string name="Fat">Fats</string>
