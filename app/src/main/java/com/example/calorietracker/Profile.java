@@ -26,17 +26,17 @@ public class Profile extends MainActivity {
         int inch = dailyIntake.getInch();
         int weight = dailyIntake.getWeight();
 
-        TextView dis_name = (TextView) findViewById(R.id.dis_name);
-        TextView dis_age = (TextView) findViewById(R.id.dis_age);
-        TextView dis_ft = (TextView) findViewById(R.id.feet);
-        TextView dis_in = (TextView) findViewById(R.id.inches);
-        TextView dis_weight = (TextView) findViewById(R.id.weight);
+        TextView textView1 = (TextView) findViewById(R.id.dis_name);
+        TextView textView2 = (TextView) findViewById(R.id.dis_age);
+        TextView textView3 = (TextView) findViewById(R.id.feet);
+        TextView textView4 = (TextView) findViewById(R.id.inches);
+        TextView textView5 = (TextView) findViewById(R.id.weight);
 
-        dis_name.setText(name);
-        dis_age.setText(age);
-        dis_ft.setText(feet);
-        dis_in.setText(inch);
-        dis_weight.setText(weight);
+        textView1.setText(name);
+        textView2.setText(String.valueOf(age));
+        textView3.setText(String.valueOf(feet));
+        textView4.setText(String.valueOf(inch));
+        textView5.setText(String.valueOf(weight));
 
         edit = findViewById(R.id.edit);
 
