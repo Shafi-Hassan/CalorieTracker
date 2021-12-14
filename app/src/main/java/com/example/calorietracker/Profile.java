@@ -34,8 +34,8 @@ public class Profile extends MainActivity {
 
         textView1.setText(name);
         textView2.setText(String.valueOf(age));
-        textView3.setText(feet + "ft");
-        textView4.setText(inch + "in");
+        textView3.setText(feet + " ft");
+        textView4.setText(inch + " in");
         textView5.setText(String.valueOf(weight));
 
         edit = findViewById(R.id.edit);
