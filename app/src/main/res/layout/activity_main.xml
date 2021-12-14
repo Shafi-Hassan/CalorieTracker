@@ -7,12 +7,21 @@
     android:background="@drawable/gradient_background"
     tools:context=".MainActivity">
 
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/piechart"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/Hello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="10dp"
         android:text="@string/ENs"
         android:textColor="#062A78"
@@ -23,89 +32,94 @@
 
     <TextView
         android:id="@+id/Calories"
-        android:layout_width="wrap_content"
+        android:gravity="right"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/Hello"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
         android:text="@string/Calorie"
         android:textColor="#062A78"
         android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/Hello" />
 
     <TextView
         android:id="@+id/Carb"
-        android:layout_width="wrap_content"
+        android:gravity="right"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/Calories"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="140dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
         android:text="@string/Carb"
         android:textColor="#062A78"
         android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/Calories" />
 
     <TextView
         android:id="@+id/Protein"
-        android:layout_width="wrap_content"
+        android:gravity="right"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/Carb"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
         android:text="@string/Protiens"
         android:textColor="#062A78"
         android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/Carb"/>
 
     <TextView
         android:id="@+id/Fat"
-        android:layout_width="wrap_content"
+        android:gravity="right"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/Protein"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="220dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
         android:text="@string/Fat"
         android:textColor="#062A78"
         android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/Protein"/>
     <TextView
         android:id="@+id/BMI"
-        android:layout_width="wrap_content"
+        android:gravity="right"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/Fat"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="260dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
         android:text="@string/BMI"
         android:textColor="#062A78"
         android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Fat"
         />
 
     <Button
         android:id="@+id/settingsbutton"
         android:layout_width="78dp"
         android:layout_height="78dp"
-        android:layout_marginBottom="168dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/outline_settings_black_48"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.201"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dailytext" />
 
     <TextView
         android:id="@+id/settingstext"
@@ -124,9 +138,9 @@
         android:id="@+id/exercisebutton"
         android:layout_width="78dp"
         android:layout_height="78dp"
-        android:layout_marginBottom="168dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/fitness"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calendarbutton"
         app:layout_constraintHorizontal_bias="0.798"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
@@ -149,9 +163,9 @@
         android:layout_width="78dp"
         android:layout_height="78dp"
         android:layout_marginEnd="200dp"
-        android:layout_marginBottom="350dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/daily"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/BMI"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
@@ -172,9 +186,9 @@
         android:layout_width="78dp"
         android:layout_height="78dp"
         android:layout_marginStart="200dp"
-        android:layout_marginBottom="350dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/outline_date_range_black_48"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/BMI"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
