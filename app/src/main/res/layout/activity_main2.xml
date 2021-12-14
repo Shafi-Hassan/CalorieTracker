@@ -35,19 +35,6 @@
 
         />
 
-    <Button
-        android:id="@+id/submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/Sub"
-        android:textColor="#30cfd0"
-        app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-
-        app:layout_constraintTop_toBottomOf="@+id/editName" />
-
     <TextView
         android:id="@+id/enterAge"
         android:layout_width="wrap_content"
@@ -58,7 +45,7 @@
         android:textColor="#30cfd0"
         android:textSize="20sp"
         app:layout_constraintRight_toRightOf="@+id/enterName"
-        app:layout_constraintTop_toBottomOf="@+id/submit" />
+        app:layout_constraintTop_toBottomOf="@+id/enterName" />
 
     <EditText
         android:id="@+id/editAge"
@@ -72,22 +59,9 @@
         android:textColor="#30cfd0"
         android:textColorHint="#30cfd0"
         app:layout_constraintLeft_toRightOf="@+id/enterAge"
-        app:layout_constraintTop_toBottomOf="@+id/submit"
+        app:layout_constraintTop_toBottomOf="@+id/enterName"
 
         />
-
-    <Button
-        android:id="@+id/submitAge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/Sub"
-        android:textColor="#30cfd0"
-        app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-
-        app:layout_constraintTop_toBottomOf="@+id/editAge" />
 
     <TextView
         android:id="@+id/enterHeight"
@@ -99,7 +73,7 @@
         android:textColor="#30cfd0"
         android:textSize="20sp"
         app:layout_constraintRight_toRightOf="@+id/enterName"
-        app:layout_constraintTop_toBottomOf="@+id/submitAge" />
+        app:layout_constraintTop_toBottomOf="@+id/enterAge" />
 
     <EditText
         android:id="@+id/editFeet"
@@ -113,14 +87,14 @@
         android:textColor="#30cfd0"
         android:textColorHint="#30cfd0"
         app:layout_constraintLeft_toRightOf="@+id/enterHeight"
-        app:layout_constraintTop_toBottomOf="@+id/submitAge"
+        app:layout_constraintTop_toBottomOf="@+id/enterAge"
         />
     <EditText
         android:id="@+id/editInch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="3dp"
         android:ems="10"
         android:hint="@string/Inch"
         android:inputType="number"
@@ -129,19 +103,6 @@
         app:layout_constraintLeft_toRightOf="@+id/enterHeight"
         app:layout_constraintTop_toBottomOf="@+id/editFeet"
         />
-
-
-    <Button
-        android:id="@+id/submitHeight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/Sub"
-        android:textColor="#30cfd0"
-        app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editInch" />
 
     <TextView
         android:id="@+id/enterWeight"
@@ -153,7 +114,7 @@
         android:textColor="#30cfd0"
         android:textSize="20sp"
         app:layout_constraintRight_toRightOf="@+id/enterName"
-        app:layout_constraintTop_toBottomOf="@+id/submitHeight" />
+        app:layout_constraintTop_toBottomOf="@+id/editInch" />
 
     <EditText
         android:id="@+id/editWeight"
@@ -168,10 +129,10 @@
         android:textColorHint="#30cfd0"
 
         app:layout_constraintLeft_toRightOf="@+id/enterWeight"
-        app:layout_constraintTop_toBottomOf="@+id/submitHeight" />
+        app:layout_constraintTop_toBottomOf="@+id/editInch" />
 
     <Button
-        android:id="@+id/submitWeight"
+        android:id="@+id/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"

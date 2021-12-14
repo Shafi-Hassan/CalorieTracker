@@ -29,30 +29,6 @@ public class MainActivity2 extends MainActivity {
                 }
             });
 
-            Button submit2 = findViewById(R.id.submitAge);
-            submit2.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    goBack();
-                }
-            });
-
-            Button submit3 = findViewById(R.id.submitHeight);
-            submit3.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    goBack();
-                }
-            });
-
-            Button submit4 = findViewById(R.id.submitWeight);
-            submit4.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    goBack();
-                }
-            });
-
             //set page title to Settings and change color
             getSupportActionBar().setTitle(Html.fromHtml("<font color = \"#30cfd0\">" + getString(R.string.settings) + "</font>"));
 
