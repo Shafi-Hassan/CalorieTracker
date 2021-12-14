@@ -30,12 +30,12 @@ public class Profile extends MainActivity {
         TextView textView2 = (TextView) findViewById(R.id.dis_age);
         TextView textView3 = (TextView) findViewById(R.id.feet);
         TextView textView4 = (TextView) findViewById(R.id.inches);
-        TextView textView5 = (TextView) findViewById(R.id.weight);
+        TextView textView5 = (TextView) findViewById(R.id.dis_weight);
 
         textView1.setText(name);
         textView2.setText(String.valueOf(age));
-        textView3.setText(String.valueOf(feet));
-        textView4.setText(String.valueOf(inch));
+        textView3.setText(feet + "ft");
+        textView4.setText(inch + "in");
         textView5.setText(String.valueOf(weight));
 
         edit = findViewById(R.id.edit);
