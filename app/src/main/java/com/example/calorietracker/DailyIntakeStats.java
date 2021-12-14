@@ -24,6 +24,10 @@ public class DailyIntakeStats {
         proteins = 0;
         name = "Guest";
         bmi = 0;
+        age = 0;
+        feet = 0;
+        inch = 0;
+        weight = 0;
     }
     // need to implement feature here to save the daily intake based on a date for Calendar feature
     // have an option to maybe choose the date

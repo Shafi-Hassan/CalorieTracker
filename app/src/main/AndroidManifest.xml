@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.calorietracker" >
+    package="com.example.calorietracker">
 
     <application
         android:allowBackup="true"
@@ -8,42 +8,48 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CalorieTracker" >
+        android:theme="@style/Theme.CalorieTracker">
+        <activity
+            android:name=".Profile"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity2"
-            android:parentActivityName=".MainActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Calendar"
-            android:parentActivityName=".MainActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Exercise"
-            android:parentActivityName=".MainActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Schedule"
-            android:parentActivityName=".Exercise"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".Exercise" />
         <activity
             android:name=".See_Schedule"
-            android:parentActivityName=".Exercise"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".Exercise" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Daily"
-            android:parentActivityName=".MainActivity"
-            android:exported="true"/>
-        <activity android:name=".InputCalorie"
-            android:parentActivityName=".Daily"
-            android:exported="true"></activity>
+        <activity
+            android:name=".Daily"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".InputCalorie"
+            android:exported="true"
+            android:parentActivityName=".Daily" />
     </application>
 
 </manifest>

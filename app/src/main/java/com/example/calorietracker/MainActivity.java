@@ -106,7 +106,7 @@ String prevStarted = "yes";
 
     //method that when called switches to Activity 2 which is the settings page
     public void openActivity2() {
-        Intent intent = new Intent(this, MainActivity2.class);
+        Intent intent = new Intent(this, Profile.class);
         startActivity(intent);
     }
 

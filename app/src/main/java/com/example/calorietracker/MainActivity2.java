@@ -87,7 +87,7 @@ public class MainActivity2 extends MainActivity {
             if(!weightString.equals(""))
                 dailyIntake.addWeight(Integer.parseInt(weightString));
 
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, Profile.class);
             //intent.putExtra(EXTRA_TEXT, text);
             startActivity(intent);
         }

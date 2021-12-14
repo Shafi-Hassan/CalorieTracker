@@ -21,9 +21,9 @@
     <string name="EA">Enter Age:</string>
     <string name="age">Age</string>
     <string name="Eh">Enter Height:</string>
-    <string name="EW">Enter Weight(lb):</string>
+    <string name="EW">Enter Weight:</string>
     <string name="He">Height</string>
-    <string name="We">Weight</string>
+    <string name="We">Weight in lbs</string>
     <string name="Exe">Exercise</string>
     <string name="ENs">Enter Name in Settings:</string>
     <string name="Fat">Fats</string>
@@ -34,5 +34,12 @@
     <string name="feet">Feet</string>
     <string name="Inch">Inches</string>
     <string name="exer">Enter Exercise Performed:</string>
-
+    <string name="prof">Profile</string>
+    <string name="edit_p">Edit Profile</string>
+    <string name="Name">Name:</string>
+    <string name="A">Age:</string>
+    <string name="Height">Height:</string>
+    <string name="Weight">Weight:</string>
+    <string name="ft">ft</string>
+    <string name="in">in</string>
 </resources>
